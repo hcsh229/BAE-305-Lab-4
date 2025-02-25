@@ -68,6 +68,8 @@ Figure 6: Expected gain vs. actual gain of the Unity Gain Inverting Amplifier
 
 Steps 3 and 4: 
 
+We estimated the gain of both the moderate gain and high gain operational amplifiers by using the ratio of the resistances. The moderate gain amplifier provided almost exactly the expected gain we calculated, whereas the high gain amplifier seemed to have some issues replicating the gain we expected. We assumed that this was due to physical limitations of the LM741 Op-Amp, and possible due to the large differences of the resistances, small variations in the resistance could result in large effects on the resistance ratio.
+
  ![image](https://github.com/user-attachments/assets/a7fbc225-8eb9-42c6-a265-27a9a1bfe06b)
 
 Table 3: Actual gain vs. expected gain for each circuit
@@ -79,7 +81,7 @@ The function of the voltage follower circuit was to take an input voltage and ex
 
 Table 4: Input voltage, output voltage, and gain for the respective circuit
 
-Step 6:   The integrating circuit we built was intended to compute the integral of any signal passed through the input. To test this we set the oscilloscope to deliver various waveforms and viewed the output to ensure that it was integrating correctly.
+Step 6:   The integrating circuit we built was intended to compute the integral of any signal passed through the input. To test this, we set the oscilloscope to deliver various waveforms and viewed the output to ensure that it was integrated correctly.
 
   ![image](https://github.com/user-attachments/assets/59bf43bb-28ba-42c5-9219-2c051f76df5a)
 
@@ -95,6 +97,7 @@ Step 6:   The integrating circuit we built was intended to compute the integral 
 
 With these integrated waves, voltage changes influenced the amplitudes of the waves, while frequency changes influenced the period of the waves. 
 Step 7: 
+The differentiating circuit was designed to perform differentiation. Once again, we supplied the circuit with a variety of signals, and compared the output signal to what we expected the derivative of the signal to be. 
 
  ![image](https://github.com/user-attachments/assets/c5e248b1-84bc-42ea-a7db-1fa8eb922d12)
 
@@ -117,8 +120,10 @@ Compare the performance of circuits 1,2 and 3 with their expected theoretical ga
 Table 5: Each circuit vs. its performance compared to expected theoretical gains
 
 -	Circuit 2, the inverting moderate gain amplifier, performed the best compared to its expected theoretical gain, with just a 1% difference. The unity gain inverting amplifier and the inverting gain high amplifier circuits both had about a 10% difference from their respective expected gains. 
+
 Comment on the limits of Op-Amp circuits with respect to maximum output voltage.
 -	The Op-Amp circuit maxed out quicker when the output voltage was negative. Both input voltages of 14V and 15V gave an output of -13.65 V, which leads me to believe that this is the negative output limit for this circuit. However, the circuit allowed positive output voltages over this limit, at 13.9V and 14.25V. 
+
 Are the LM741 Op-Amps symmetric? (Does positive voltage performance equal negative voltage performance?)
 -	As mentioned above, the limits of positive and negative voltage outputs appear to be different. Therefore, the LM741 Op-Amps must not be symmetric. 
 
